@@ -29,6 +29,7 @@ kotlin {
             version = "~> 4.0.1"
         }
         pod("CouchbaseLite-Enterprise") {
+            moduleName = "CouchbaseLite"
             version = "~> 3.1.0"
         }
     }
@@ -59,6 +60,12 @@ kotlin {
             iosX64Test.dependsOn(this)
             iosArm64Test.dependsOn(this)
             iosSimulatorArm64Test.dependsOn(this)
+        }
+    }
+
+    kotlin {
+        targets.withType<org.jetbrains.kotlin.gradle.plugin.mpp.KotlinNativeTarget>().all {
+            compilations["main"].cinterops["CouchbaseLite"].extraOpts("-compiler-option", "-DCBLQueryMeta=CBLQueryMetaUnavailable")
         }
     }
 }
