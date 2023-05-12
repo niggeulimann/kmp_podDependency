@@ -1,8 +1,7 @@
 package de.getslash.pos_mobile.podtestapp
 
 import platform.UIKit.UIDevice
-import cocoapods.AFNetworking.*
-import cocoapods.CouchbaseLite.*
+import cocoapods.CouchbaseLite.CBLConsoleLogger
 
 
 class IOSPlatform: Platform {

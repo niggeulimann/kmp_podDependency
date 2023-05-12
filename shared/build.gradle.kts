@@ -25,11 +25,10 @@ kotlin {
         framework {
             baseName = "shared"
         }
-        pod("AFNetworking") {
-            version = "~> 4.0.1"
-        }
+
         pod("CouchbaseLite-Enterprise") {
             moduleName = "CouchbaseLite"
+            packageName = "cocoapods.CouchbaseLite"
             version = "~> 3.1.0"
         }
     }
