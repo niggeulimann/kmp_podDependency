@@ -1,0 +1,41 @@
+PODS:
+  - AFNetworking (4.0.1):
+    - AFNetworking/NSURLSession (= 4.0.1)
+    - AFNetworking/Reachability (= 4.0.1)
+    - AFNetworking/Security (= 4.0.1)
+    - AFNetworking/Serialization (= 4.0.1)
+    - AFNetworking/UIKit (= 4.0.1)
+  - AFNetworking/NSURLSession (4.0.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (4.0.1)
+  - AFNetworking/Security (4.0.1)
+  - AFNetworking/Serialization (4.0.1)
+  - AFNetworking/UIKit (4.0.1):
+    - AFNetworking/NSURLSession
+  - CouchbaseLite-Enterprise (3.1.0)
+  - shared (1.0):
+    - AFNetworking (~> 4.0.1)
+    - CouchbaseLite-Enterprise (~> 3.1.0)
+
+DEPENDENCIES:
+  - shared (from `../shared`)
+
+SPEC REPOS:
+  trunk:
+    - AFNetworking
+    - CouchbaseLite-Enterprise
+
+EXTERNAL SOURCES:
+  shared:
+    :path: "../shared"
+
+SPEC CHECKSUMS:
+  AFNetworking: 3bd23d814e976cd148d7d44c3ab78017b744cd58
+  CouchbaseLite-Enterprise: 22ad3e73d3ff94b9646ba3abccaa382ccd3d9282
+  shared: ee96453dd908384c79efada24a087c2ba3736b6c
+
+PODFILE CHECKSUM: 67fc84dbb6d56ec30ffe800c92fbe26bcb92d71e
+
+COCOAPODS: 1.12.0
